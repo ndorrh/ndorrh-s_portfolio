@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import SocialIcons from './SocialIcons';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import { useState, useEffect } from 'react';
 import './NavBar.css'
@@ -31,13 +30,13 @@ const NavBar = () => {
   }
 
   return (
-    <Navbar bg="light"  expand="lg" className={scrolled ? "Scrolled" : ""} >
+    <Navbar expand="lg" className={scrolled ? "scrolled" : ""} >
       <Container>
         <Navbar.Brand href="#home">
           <img src= {logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
-          <span className="navbar-toggle-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -46,7 +45,7 @@ const NavBar = () => {
             <Nav.Link href="#Projects" className={activeLink == 'projects' ? "active navbar-link" : "navbar-link"} onClick={() => updateActiveLink('projects')}>Projects</Nav.Link>
           </Nav>
           <SocialIcons />
-          <Button variant="primary" onClick={() => console.log('Connect')}>Let&apos;s connect</Button>
+          <Button variant="primary" onClick={() => console.log('Connect')} className="navbar-text" >Let&apos;s connect</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
