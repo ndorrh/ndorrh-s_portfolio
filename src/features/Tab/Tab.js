@@ -9,7 +9,7 @@ import colorSharp from '../../assets/img/color-sharp.png';
 
 const TabMenu = () => {
   return (
-    <section className="skill" id="skill">
+    <section className="skill" id="Skills">
     <Container>
         <div className="skill-bx">
       <Tabs

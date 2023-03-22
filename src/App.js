@@ -5,6 +5,7 @@ import NavBar from './common/NavBar';
 import Banner from './features/banner/Banner';
 import './features/Tab/skill.css'
 import TabMenu from './features/Tab/Tab';
+import Project from './features/projects/Project';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Banner />
       <TabMenu />
+      <Project />
     </div>
   );
 }
