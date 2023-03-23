@@ -18,9 +18,6 @@ const TabMenu = () => {
         className="mb-3"
         fill
         mountOnEnter={true}
-        autPlay={true}
-        autoPlaySpeed={1000}
-        showDots={true}
       >
         <Tab eventKey="Languages" title="Languages" >
           <Languages />
