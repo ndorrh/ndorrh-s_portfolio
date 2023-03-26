@@ -1,3 +1,5 @@
+import { ErrorBoundary } from 'react-error-boundary';
+import ErrorHandler from './common/ErrorHandler';
 import './common/NavBar'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,12 +14,30 @@ import { Footer } from './features/footer/Footer';
 const App = () => {
   return (
     <div className="App">
-      <NavBar />
-      <Banner />
-      <TabMenu />
-      <Project />
-      <Contact />
-      <Footer />
+      <ErrorBoundary fallback={<ErrorHandler />}>
+        <NavBar />
+      </ErrorBoundary>
+
+      <ErrorBoundary fallback={<ErrorHandler />}>
+        <Banner />
+      </ErrorBoundary>
+
+      <ErrorBoundary fallback={<ErrorHandler />}>
+        <TabMenu />
+      </ErrorBoundary>
+
+      <ErrorBoundary fallback={<ErrorHandler />}>
+        <Project />
+      </ErrorBoundary>
+
+      <ErrorBoundary fallback={<ErrorHandler />}>
+        <Contact />
+      </ErrorBoundary>
+
+      <ErrorBoundary fallback={<ErrorHandler />}>
+        <Footer />
+      </ErrorBoundary>
+
     </div>
   );
 }
