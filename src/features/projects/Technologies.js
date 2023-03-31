@@ -7,6 +7,7 @@ const Technologies = ({ technologies }) => {
 
   return (
     <div className="technology">
+      <span className="built-with">Built with:</span>
       {
         arrTechnologies.map((tech, index) => <Badge bg="secondary" key={index}>{tech}</Badge>)
       }

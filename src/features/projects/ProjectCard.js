@@ -1,17 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { useState } from 'react';
-import { Col, Button, Modal, Container } from 'react-bootstrap';
-import Technologies from './Technologies';
+import { Col, Button } from 'react-bootstrap';
+import ProjectModal from './ProjectModal';
 
-const ProjectCard = ({title, description, imgUrl, technologies}) => {
-  const [fullscreen, setFullscreen] = useState(true);
-  const [show, setShow] = useState(false);
-
-  const handleShow = (breakpoint) => {
-    setFullscreen(breakpoint);
-    setShow(true);
-  }
+const ProjectCard = ({title, description, imgUrl, technologies, url}) => {
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <Col sm={6} md={4}>
@@ -20,20 +14,16 @@ const ProjectCard = ({title, description, imgUrl, technologies}) => {
         <div className="project-info">
           <h4>{title}</h4>
           <span>{description}</span>
-          <Technologies technologies={technologies} />
           <>
-
-            <Button className="me-2 mb-2" onClick={() => handleShow(true)} variant="primary">
-              See project
+            <Button variant="primary" onClick={() => setModalShow(true)}>
+              See More
             </Button>
-            <Container >
-            <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
-              <Modal.Header closeButton>
-                <Modal.Title>Modalhbkjbkb</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>Modal body content</Modal.Body>
-            </Modal>
-            </Container>
+
+            <ProjectModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+              project={{ title, description, imgUrl, technologies, url }}
+            />
           </>
         </div>
       </div>

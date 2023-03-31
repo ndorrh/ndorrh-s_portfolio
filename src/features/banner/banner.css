@@ -85,3 +85,27 @@
 .text-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+
+/* Media query for mobile devices */
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 100px 0 50px 0;
+  }
+  
+  .banner h1 {
+    font-size: 24px;
+  }
+  
+  .banner p {
+    font-size: 16px;
+  }
+  
+  .banner button {
+    font-size: 16px;
+  }
+  
+  .banner button svg {
+    font-size: 20px;
+  }
+}

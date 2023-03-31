@@ -81,3 +81,17 @@ span.danger {
 .contact form button:hover::before {
   width: 100%;
 }
+
+/* Media query for mobile devices */
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    padding: 60px 0 100px 0;
+  }
+  .contact h2 {
+    font-size: 35px;
+  }
+  .contact form button {
+    padding: 14px 38px;
+  }
+}

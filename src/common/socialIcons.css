@@ -40,3 +40,11 @@
 .social-icons a:hover img {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(90%) hue-rotate(346deg) brightness(10%);
 }
+
+/* Media query for mobile devices */
+
+@media only screen and (max-width: 768px) {
+  .social-icons {
+    margin-left: 0;
+  }
+}

@@ -13,8 +13,10 @@ export const projects = [
       frontEnd: 'React js',
       markUP: 'HTML5',
     },
-    linkToLiveVersion: 'https://reserve-tesla-car.onrender.com',
-    linkToSource: 'https://github.com/luccamicale/Full-Stack-Capstone-Group',
+    url: {
+      liveDemo: 'https://reserve-tesla-car.onrender.com',
+      sourceCode: 'https://github.com/luccamicale/Full-Stack-Capstone-Group',
+    }
   },
 
   {
@@ -31,8 +33,10 @@ export const projects = [
       frontEnd: 'React js',
       markUP: 'HTML5',
     },
-    linkToLiveVersion: 'https://reserve-tesla-car.onrender.com',
-    linkToSource: 'https://github.com/luccamicale/Full-Stack-Capstone-Group',
+   url: {
+     liveDemo: 'https://reserve-tesla-car.onrender.com',
+     sourceCode: 'https://github.com/luccamicale/Full-Stack-Capstone-Group',
+   }
   },
 
   {
@@ -49,8 +53,10 @@ export const projects = [
       frontEnd: 'React js',
       markUP: 'HTML5',
     },
-    linkToLiveVersion: 'https://reserve-tesla-car.onrender.com',
-    linkToSource: 'https://github.com/luccamicale/Full-Stack-Capstone-Group',
+    url: {
+      liveDemo: 'https://reserve-tesla-car.onrender.com',
+      sourceCode: 'https://github.com/luccamicale/Full-Stack-Capstone-Group',
+    }
   },
 
   {
@@ -67,7 +73,9 @@ export const projects = [
       frontEnd: 'React js',
       markUP: 'HTML5',
     },
-    linkToLiveVersion: 'https://reserve-tesla-car.onrender.com',
-    linkToSource: 'https://github.com/luccamicale/Full-Stack-Capstone-Group',
+    url: {
+      liveDemo: 'https://reserve-tesla-car.onrender.com',
+      sourceCode: 'https://github.com/luccamicale/Full-Stack-Capstone-Group',
+    }
   },
 ]

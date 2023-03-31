@@ -90,3 +90,13 @@
 .footer-social-icon .social-icons a img {
   width: 100px;
 }
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .newsletter-bx {
+    padding: 85px 25px;
+  }
+  .footer-social-icon .social-icons a img {
+    width: 50px;
+  }
+}
