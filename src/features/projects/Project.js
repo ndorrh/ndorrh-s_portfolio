@@ -16,14 +16,14 @@ const Project = () => {
             <Tab.Container id="project-tabs" defaultActiveKey="first">
               <Nav variant="pills" defaultActiveKey="/home">
                 <Nav.Item>
-                  <Nav.Link eventKey="first">React</Nav.Link>
+                  <Nav.Link eventKey="first">Web</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Rails</Nav.Link>
+                  <Nav.Link eventKey="second">Mobile</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="third" >
-                    FullStack
+                    Desktop
                   </Nav.Link>
                 </Nav.Item>
               </Nav>

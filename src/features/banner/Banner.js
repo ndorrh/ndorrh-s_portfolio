@@ -14,25 +14,23 @@ const Banner = () => {
   const period = 2000;
 
   const tick = () => {
-    let i = loopNum % toRotate.length
-    let fullText = toRotate[i]
-    let upDateText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
+  let i = loopNum % toRotate.length
+  let fullText = toRotate[i]
+  let upDateText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1)
 
-    setText(upDateText)
+  setText(upDateText)
 
-    if(isDeleting) {
-      setTimeInterval(preTimeInterval => preTimeInterval / 2)
-    }
+  isDeleting ? setTimeInterval(preTimeInterval => preTimeInterval / 2) : null
+  isDeleting ? null : setTimeInterval(500)
 
-    if(!isDeleting && fullText === upDateText){
-      setIsDeleting(true)
-      setTimeInterval(period)
-    } else if (isDeleting && upDateText === '') {
-      setIsDeleting(false)
-      setTimeInterval(500)
-      setLoopNum(loopNum + 1)
-    }
+  if(!isDeleting && fullText === upDateText){
+    setIsDeleting(true)
+    setTimeInterval(period)
+  } else if (isDeleting && upDateText === '') {
+    setIsDeleting(false)
+    setLoopNum(loopNum + 1)
   }
+}
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -51,7 +49,12 @@ const Banner = () => {
             <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             <div className="connect-resume">
             <Button variant="primary" onClick={() => console.log('Connect')} className="navbar-text" >Let&apos;s connect <ArrowRightCircle size={25} /></Button>
-             <Button variant="primary" onClick={() => console.log('Connect')} className="navbar-text" >Get my Resume</Button>
+              <Button variant="primary" 
+              className="navbar-text" 
+              href={require('../../assets/CV/NdorrhCv.pdf')}
+              target="_blank" 
+              rel="noreferrer"
+              >Get my Resume</Button>
             </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
