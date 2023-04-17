@@ -12,7 +12,6 @@ const Project = () => {
         <Row>
           <Col>
             <h2>Projects</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis tenetur suscipit a minima repellat officiis odit, inventore quo delectus nesciunt veritatis molestias? Dicta, adipisci officiis. Tenetur animi dicta</p>
             <Tab.Container id="project-tabs" defaultActiveKey="first">
               <Nav variant="pills" defaultActiveKey="/home">
                 <Nav.Item>

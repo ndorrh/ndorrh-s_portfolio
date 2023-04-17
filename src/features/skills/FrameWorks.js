@@ -33,8 +33,6 @@ const FrameWorks = () => {
           <Col>
             
               <h2>FrameWorks</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis tenetur suscipit a minima repellat officiis odit, inventore quo delectus
-              </p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
                   <img src={meter1} alt="Skill" />

@@ -12,7 +12,7 @@ export const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6} className="footer-log">
-            <img src={logo} alt="Logo" />
+            <img src="https://avatars.githubusercontent.com/u/106782840?s=400&u=c0d4be2a94274e11b351ca54d4106bd5adc886bf&v=4" alt="Logo" style={{ width: 50, height: 50, borderRadius: 50 }} />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="footer-social-icon">

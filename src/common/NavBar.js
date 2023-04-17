@@ -33,7 +33,7 @@ const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""} >
       <Container>
         <Navbar.Brand href="#home">
-          <img src= {logo} alt="Logo" />
+          <img src="https://avatars.githubusercontent.com/u/106782840?s=400&u=c0d4be2a94274e11b351ca54d4106bd5adc886bf&v=4" alt="Logo" style={{width: 50, height: 50, borderRadius: 50}} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
           <span className="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@ const NavBar = () => {
             <Nav.Link href="#connect" className={activeLink == 'connect' ? "active navbar-link" : "navbar-link"} onClick={() => updateActiveLink('connect')}>Contact</Nav.Link>
           </Nav>
           <SocialIcons />
-          <Button variant="primary" onClick={() => console.log('Connect')} className="navbar-text" >Let&apos;s connect</Button>
+          <Button variant="primary" href="#connect" className="navbar-text" style={{marginLeft: 10}}>Let&apos;s connect</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -48,13 +48,7 @@ const Banner = () => {
             <h1 className="text-rotate">{`Hi I'm Ndorrh. `} <span className="wrap">{text}</span></h1>
             <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             <div className="connect-resume">
-            <Button variant="primary" onClick={() => console.log('Connect')} className="navbar-text" >Let&apos;s connect <ArrowRightCircle size={25} /></Button>
-              <Button variant="primary" 
-              className="navbar-text" 
-              href={require('../../assets/CV/NdorrhCv.pdf')}
-              target="_blank" 
-              rel="noreferrer"
-              >Get my Resume</Button>
+              <Button variant="primary" onClick={() => console.log('Connect')} className="navbar-text" href="#connect">Let&apos;s connect <ArrowRightCircle size={25} /></Button>
             </div>
           </Col>
           <Col xs={12} md={6} xl={5}>

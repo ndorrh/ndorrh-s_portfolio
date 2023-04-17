@@ -28,33 +28,35 @@ const Languages = () => {
     }
   };
   return (
-      <div>
-        <Row>
-          <Col>
-              <h2>Languages</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis tenetur suscipit a minima repellat officiis odit, inventore quo delectus nesciunt veritatis molestias? Dicta, adipisci officiis. Tenetur animi dicta
-              </p>
-              <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                <div className="item">
-                  <img src={meter1} alt="Skill" />
-                  <h5>HTML</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="Skill" />
-                  <h5>CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="Skill" />
-                  <h5>JavaScript</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="Skill" />
-                  <h5>Ruby</h5>
-                </div>
-              </Carousel>
-          </Col>
-        </Row>
-      </div>
+    <div>
+      <Row>
+        <Col>
+          <h2>Languages</h2>
+          <Carousel responsive={responsive} infinite={true} className="skill-slider">
+            <div className="item">
+              <img src={meter1} alt="Skill" />
+              <h5>HTML</h5>
+            </div>
+            <div className="item">
+              <img src={meter2} alt="Skill" />
+              <h5>CSS</h5>
+            </div>
+            <div className="item">
+              <img src={meter3} alt="Skill" />
+              <h5>JavaScript</h5>
+            </div>
+            <div className="item">
+              <img src={meter3} alt="Skill" />
+              <h5>TypeScript</h5>
+            </div>
+            <div className="item">
+              <img src={meter1} alt="Skill" />
+              <h5>Ruby</h5>
+            </div>
+          </Carousel>
+        </Col>
+      </Row>
+    </div>
   )
 }
 

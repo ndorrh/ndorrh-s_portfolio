@@ -13,7 +13,7 @@ const ProjectCard = ({title, description, imgUrl, technologies, url}) => {
         <img src={require(`../../assets/projectImages/${imgUrl}`)} alt="Image" />
         <div className="project-info">
           <h4>{title}</h4>
-          <span>{description}</span>
+          <span>{`${description.slice(0, 140)}...`}</span>
           <>
             <Button variant="primary" onClick={() => setModalShow(true)}>
               See More

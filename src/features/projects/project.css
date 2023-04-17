@@ -100,10 +100,39 @@
   height: 50vh;
 }
 
+/* .project-imgbx fit div*/
 .project-imgbx img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  z-index: -10000;
+  animation: scale 0.5s 1; 
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.2);
+    z-index: -10000;
+  }
+
+  25% {
+    transform: scale(0.4);
+    z-index: -10000;
+  }
+
+  50% {
+    transform: scale(0.6);
+    z-index: -10000;
+  }
+
+  75% {
+    transform: scale(0.8);
+    z-index: -10000;
+  }
+
+  100% {
+    transform: scale(1);
+    z-index: -10000;
+  }
 }
 
 .project-imgbx::before {
