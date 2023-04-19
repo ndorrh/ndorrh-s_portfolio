@@ -10,11 +10,11 @@ import './socialIcons.css'
 const SocialIcons = () => {
   return (
     <Nav className='social-icons'>
-      <Nav.Link href="https://www.linkedin.com/in/ndorrhoswaldebu" class="socialImg"><img src={navIcon1} alt='' /></Nav.Link >
-      <Nav.Link href="https://github.com/ndorrh" class="socialImg"><img src={github} alt='github' /></Nav.Link >
-      <Nav.Link href="https://www.twitter.com/NdorrhEbu" class="socialImg"><img src={twitter} alt='twitter' /></Nav.Link >
-      <Nav.Link href="#" class="socialImg"><img src={navIcon3} alt='instagram' /></Nav.Link >
-      <Nav.Link href="#" class="socialImg"><img src={facebook} alt='' /></Nav.Link >
+      <Nav.Link href="https://www.linkedin.com/in/ndorrhoswaldebu" className="socialImg" target='_blank'><img src={navIcon1} alt='' /></Nav.Link >
+      <Nav.Link href="https://github.com/ndorrh" className="socialImg" target='_blank'><img src={github} alt='github' /></Nav.Link >
+      <Nav.Link href="https://www.twitter.com/NdorrhEbu" className="socialImg" target='_blank'><img src={twitter} alt='twitter' /></Nav.Link >
+      <Nav.Link href="#" className="socialImg" target='_blank'><img src={navIcon3} alt='instagram' /></Nav.Link >
+      <Nav.Link href="#" className="socialImg" target='_blank'><img src={facebook} alt='' /></Nav.Link >
     </Nav>
   )
 }

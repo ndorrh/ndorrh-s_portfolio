@@ -5,21 +5,32 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { useState, useEffect } from 'react';
 import './NavBar.css'
-import logo from '../assets/img/logo.svg'
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
+  const [bgColor, setBgColor] = useState("")
+
+  const changeBgColor = () => {
+    if (window.innerWidth < 769 ) {
+      setBgColor("#000000")
+    }else {
+      setBgColor("")
+    }
+  }
 
   useEffect(() => {
     const onScroll = () => {
-      if(window.scrollY > 50) {
+      if (window.scrollY > 50) {
         setScrolled(true)
       } else {
         setScrolled(false)
       }
     }
 
+    const bgColorLgScreen = () => window.innerWidth > 768 ? setBgColor("") : setBgColor("#000000") 
+
+    window.addEventListener('resize', bgColorLgScreen);
     window.addEventListener('scroll', onScroll);
 
     return () => window.removeEventListener('scroll', onScroll)
@@ -30,12 +41,12 @@ const NavBar = () => {
   }
 
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""} >
+    <Navbar expand="lg" className={scrolled ? "scrolled " : ""} onClick={changeBgColor} style={{backgroundColor: bgColor}}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src="https://avatars.githubusercontent.com/u/106782840?s=400&u=c0d4be2a94274e11b351ca54d4106bd5adc886bf&v=4" alt="Logo" style={{width: 50, height: 50, borderRadius: 50}} />
+          <img src="https://avatars.githubusercontent.com/u/106782840?s=400&u=c0d4be2a94274e11b351ca54d4106bd5adc886bf&v=4" alt="Logo" style={{ width: 50, height: 50, borderRadius: 50 }} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" >
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
@@ -46,7 +57,7 @@ const NavBar = () => {
             <Nav.Link href="#connect" className={activeLink == 'connect' ? "active navbar-link" : "navbar-link"} onClick={() => updateActiveLink('connect')}>Contact</Nav.Link>
           </Nav>
           <SocialIcons />
-          <Button variant="primary" href="#connect" className="navbar-text" style={{marginLeft: 10}}>Let&apos;s connect</Button>
+          <Button variant="primary" href="#connect" className="navbar-text" style={{ marginLeft: 10 }}>Let&apos;s connect</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

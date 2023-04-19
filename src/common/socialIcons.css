@@ -1,5 +1,4 @@
 .social-icons {
-  display: inline-block;
   margin-left: 14px;
 }
 
@@ -45,6 +44,10 @@
 
 @media only screen and (max-width: 768px) {
   .social-icons {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    padding: 10px;
     margin-left: 0;
   }
 }

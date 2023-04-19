@@ -7,12 +7,12 @@ nav.navbar {
   transition: 0.32s ease-in-out;
 }
 
-nav.navbar.scrolled{
+nav.navbar.scrolled {
   padding: 8px 0;
   background-color: #121212;
 }
 
-nav.navbar a.navbar-brand img{
+nav.navbar a.navbar-brand img {
   width: 70%;
 }
 
@@ -145,12 +145,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transition: 0.32s ease-in-out;
   }
 
-  nav.navbar.scrolled{
+  .navbar-collapse {
+    height: 60vh;
+    align-items: flex-start;
+  }
+
+  nav.navbar.scrolled {
     padding: 8px 0;
     background-color: #121212;
   }
 
-  nav.navbar a.navbar-brand img{
+  nav.navbar a.navbar-brand img {
     width: 70%;
   }
 
